@@ -1,7 +1,13 @@
 from fastapi import APIRouter
+from pydantic import BaseModel
+from app.services.ai_prompt import chatbot_response  # import the function
 
 router = APIRouter()
 
-@router.post("/")
-def chatbot_reply(prompt: str):
-    return {"response": f"Imagine an AI answered: {prompt}"}
+class ChatbotRequest(BaseModel):
+    message: str
+
+@router.post("/chatbot/")
+def chatbot_reply(data: ChatbotRequest):
+    reply = chatbot_response(data.message)
+    return {"response": reply}

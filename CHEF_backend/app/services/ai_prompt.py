@@ -1,7 +1,7 @@
 import google.generativeai as genai
 import os
 
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+genai.configure(api_key="AIzaSyCzy5thLA2G1bcOJucI0SOIhN1LCbLNfiU")
 model = genai.GenerativeModel(model_name="models/gemini-1.5-pro-latest")
 
 def generate_meal_times(events: list, meals_per_day: int = 3):
@@ -126,3 +126,23 @@ def generate_meal_plan(events: list, preferences: dict, meal_history: list = Non
         return response.text.strip().splitlines()
     except Exception as e:
         return [f"Error from Gemini: {str(e)}"]
+
+def chatbot_response(message: str):
+    try:
+        system_prompt = f"""
+You are a friendly and concise meal planning assistant chatbot for a mobile app.
+
+Instructions:
+- Be polite and upbeat.
+- Keep answers under 5 sentences unless user asks for detailed advice.
+- If suggesting meals, use bullet points.
+- Focus only on meals, diet, groceries, nutrition, or health topics.
+- Always answer clearly, casually, and briefly unless asked for deep detail.
+
+Here is the user's message:
+{message}
+"""
+        response = model.generate_content(system_prompt)
+        return response.text.strip()
+    except Exception as e:
+        return "⚠️ Sorry, I couldn't process your request right now. Please try again later!"

@@ -20,7 +20,7 @@ app.add_middleware(
 bearer_scheme = HTTPBearer()
 app.include_router(calendar.router, prefix="/calendar")
 app.include_router(meals.router, prefix="/meals")
-app.include_router(chatbot.router, prefix="/chatbot")
+app.include_router(chatbot.router, prefix="")
 app.include_router(planner.router, prefix="/planner")
 app.include_router(test_firebase.router)
 app.include_router(user.router)
