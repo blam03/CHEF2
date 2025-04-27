@@ -131,7 +131,7 @@ export default function DashboardPage() {
           />
         </div>
 
-        <div className="flex flex-col gap-6 w-[50%]">
+        <div className="flex flex-col gap-6 w-[35%]">
           {/* Meal Analytics Section */}
           <div className="p-5 bg-white rounded-xl shadow-sm border">
             <h2 className="text-lg font-semibold text-gray-700 mb-6">Meal Analytics</h2>
@@ -184,7 +184,7 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        <div className="w-[20%] bg-white rounded-xl shadow-sm border p-5 flex flex-col h-[700px]">
+        <div className="w-[30%] bg-white rounded-xl shadow-sm border p-5 flex flex-col h-[700px]">
           <h2 className="text-lg font-semibold text-gray-700 mb-4">Chat Assistant</h2>
           <div className="flex-1 bg-gray-50 rounded-lg p-4 overflow-y-auto space-y-4">
             {messages.map((msg, index) => (
