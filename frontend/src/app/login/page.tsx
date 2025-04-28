@@ -9,22 +9,51 @@ export default function LoginPage() {
   }, [])
 
   const handleLogin = () => {
-    signIn("google")
+    signIn("google", { callbackUrl: "/dashboard" })
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-100 to-red-200 p-4">
-      <div className="bg-white rounded-2xl shadow-xl p-8 max-w-sm w-full text-center">
-        <h1 className="text-2xl font-bold text-gray-800 mb-4">Welcome to Chef 👨‍🍳</h1>
-        <p className="text-sm text-gray-500 mb-6">Plan smarter meals, powered by Google.</p>
+    <div className="min-h-screen flex items-center justify-center p-4 relative overflow-hidden">
+      
+      {/* Animated Radial Gradient Background */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,#FFAD60,#FF6B6B,#FF4E00)] animate-pulseBackground bg-cover bg-no-repeat"></div>
+      
+      {/* Glassmorphism Card */}
+      <div className="relative z-10 backdrop-blur-xl bg-white/10 border-2 border-orange-200 shadow-2xl rounded-2xl p-16 max-w-lg w-full text-center">
+        {/* CHEF Title */}
+        <h1 className="text-6xl font-extrabold text-white mb-10 tracking-widest drop-shadow-[0_0_30px_white,0_0_45px_#FFAD60,0_0_60px_#FF6B6B]">
+          CHEF
+        </h1>
 
+
+        {/* Google Sign-In Button */}
         <button
-          onClick={() => signIn('google', { callbackUrl: '/dashboard' })}
-          className="w-full bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-xl transition-all"
+          onClick={handleLogin}
+          className="w-full py-3 bg-[#FF6B6B] hover:bg-[#FF4E00] text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all transform hover:scale-105 text-lg"
         >
           Sign in with Google
         </button>
+
+        {/* Toggle Link (if needed later) */}
+        <div className="mt-6 text-white font-bold">
+          Don't have an account? <span className="underline cursor-pointer">Sign up</span>
+        </div>
+
       </div>
+
+      {/* Keyframe animation */}
+      <style jsx>{`
+        @keyframes pulseBackground {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        .animate-pulseBackground {
+          background-size: 400% 400%;
+          animation: pulseBackground 6s ease infinite;
+        }
+      `}</style>
+
     </div>
   )
 }

@@ -89,10 +89,10 @@ function MealsPage() {
         columnNumber: 44
     }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex flex-col min-h-screen bg-gray-50 pb-20",
+        className: "flex flex-col min-h-screen bg-gradient-to-r from-orange-500 via-red-600 to-red-500 animate-gradient pb-20",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex w-full p-6 -flex w-full p-6 bg-gradient-to-r from-orange-200 via-orange-300 to-orange-400 text-gray-800-to-r from-orange-400 to-orange-600 text-white",
+                className: "flex w-full p-6 bg-white/30 backdrop-blur-md rounded-b-xl shadow-lg text-white",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "flex flex-col items-center w-1/3 space-y-4",
@@ -214,7 +214,7 @@ function MealsPage() {
                 className: "flex flex-col items-center mt-8 px-4 w-full",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-2xl font-bold mb-6",
+                        className: "text-2xl font-bold mb-6 text-white",
                         children: "My Meals"
                     }, void 0, false, {
                         fileName: "[project]/src/app/meals/page.tsx",
@@ -227,7 +227,7 @@ function MealsPage() {
                         children: Array.from({
                             length: 8
                         }).map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex-shrink-0 bg-white p-4 rounded-lg shadow-md flex flex-col items-center w-[220px]",
+                                className: "flex-shrink-0 bg-white/30 backdrop-blur-lg p-4 rounded-xl shadow-md flex flex-col items-center w-[220px] border border-white/20",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                         src: "https://via.placeholder.com/200",
@@ -239,7 +239,7 @@ function MealsPage() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-lg font-bold mb-2",
+                                        className: "text-lg font-bold text-gray-800 mb-2",
                                         children: [
                                             "My Meal ",
                                             index + 1
@@ -269,7 +269,7 @@ function MealsPage() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-2xl font-bold mb-6",
+                        className: "text-2xl font-bold mb-6 text-white",
                         children: "Meals by Friends"
                     }, void 0, false, {
                         fileName: "[project]/src/app/meals/page.tsx",
@@ -282,7 +282,7 @@ function MealsPage() {
                         children: Array.from({
                             length: 10
                         }).map((_, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex-shrink-0 bg-white p-4 rounded-lg shadow-md flex flex-col items-center w-[220px]",
+                                className: "flex-shrink-0 bg-white/30 backdrop-blur-lg p-4 rounded-xl shadow-md flex flex-col items-center w-[220px] border border-white/20",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                         src: "https://via.placeholder.com/200",
@@ -294,7 +294,7 @@ function MealsPage() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                        className: "text-lg font-bold mb-2",
+                                        className: "text-lg font-bold text-gray-800 mb-2",
                                         children: [
                                             "Friend's Meal ",
                                             index + 1
@@ -330,11 +330,11 @@ function MealsPage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "fixed bottom-0 left-0 w-full bg-gray-800 text-white flex justify-around items-center h-16 shadow-inner z-50",
+                className: "fixed bottom-0 left-0 w-full bg-white/20 backdrop-blur-md text-white flex justify-around items-center h-16 shadow-inner z-50",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>router.push('/dashboard'),
-                        className: "hover:text-blue-400",
+                        className: "hover:text-gray-100",
                         children: "Home"
                     }, void 0, false, {
                         fileName: "[project]/src/app/meals/page.tsx",
@@ -343,7 +343,7 @@ function MealsPage() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>router.push('/meals'),
-                        className: "hover:text-blue-400",
+                        className: "hover:text-gray-100",
                         children: "Meals"
                     }, void 0, false, {
                         fileName: "[project]/src/app/meals/page.tsx",
@@ -352,7 +352,7 @@ function MealsPage() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>router.push('/grocerylist'),
-                        className: "hover:text-blue-400",
+                        className: "hover:text-gray-100",
                         children: "Grocery List"
                     }, void 0, false, {
                         fileName: "[project]/src/app/meals/page.tsx",
@@ -361,7 +361,7 @@ function MealsPage() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: ()=>router.push('/profile'),
-                        className: "hover:text-blue-400",
+                        className: "hover:text-gray-100",
                         children: "Profile"
                     }, void 0, false, {
                         fileName: "[project]/src/app/meals/page.tsx",

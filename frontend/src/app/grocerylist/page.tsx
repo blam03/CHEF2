@@ -50,9 +50,9 @@ export default function GroceryListPage() {
   if (status === 'unauthenticated') return <p>You must be logged in to view this page.</p>
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50 pb-20">
+    <div className="flex flex-col min-h-screen bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 animate-gradient pb-20">
       {/* Top Profile Section */}
-      <div className="flex w-full p-6 bg-gradient-to-r from-orange-200 via-orange-300 to-orange-400 text-gray-800">
+      <div className="flex w-full p-6 bg-white/30 backdrop-blur-md rounded-b-xl shadow-lg">
         {/* Left side: Profile Pic + Info */}
         <div className="flex flex-col items-center w-1/3 space-y-4">
           <img
@@ -60,11 +60,11 @@ export default function GroceryListPage() {
             alt="Profile Picture"
             className="w-32 h-32 rounded-full border-4 border-white object-cover"
           />
-          <h2 className="text-3xl font-bold">{session?.user?.name || 'Grocery Planner'}</h2>
+          <h2 className="text-3xl font-bold text-white">{session?.user?.name || 'Grocery Planner'}</h2>
         </div>
 
         {/* Right side: Bio/Description */}
-        <div className="flex flex-col justify-center w-2/3 pl-10">
+        <div className="flex flex-col justify-center w-2/3 pl-10 text-white">
           <h3 className="text-xl font-semibold mb-2">Your Grocery List</h3>
           <p className="text-md">
             Pick your ingredients easily and head to Instacart! 🛒
@@ -74,14 +74,14 @@ export default function GroceryListPage() {
 
       {/* Main Grocery Section */}
       <div className="flex flex-col items-center mt-8 px-4 w-full">
-        <h2 className="text-2xl font-bold mb-6">Saved Meal</h2>
+        <h2 className="text-2xl font-bold mb-6 text-white">Saved Meals</h2>
 
         {/* Meal + Ingredients Section */}
         <div className="flex flex-col gap-6 w-full max-w-4xl">
           {meals.map((meal) => (
-            <div key={meal.title} className="bg-white p-4 rounded-lg shadow-md">
+            <div key={meal.title} className="bg-white/30 backdrop-blur-lg p-6 rounded-xl shadow-md border border-white/20">
               <div className="flex justify-between items-center">
-                <h3 className="text-xl font-bold">{meal.title}</h3>
+                <h3 className="text-xl font-bold text-gray-800">{meal.title}</h3>
                 <button
                   onClick={() => setExpandedMeal(expandedMeal === meal.title ? null : meal.title)}
                   className="text-green-500 hover:underline"
@@ -101,7 +101,7 @@ export default function GroceryListPage() {
                         onChange={() => toggleIngredient(ingredient)}
                         className="mr-2"
                       />
-                      <label htmlFor={ingredient}>{ingredient}</label>
+                      <label htmlFor={ingredient} className="text-gray-700">{ingredient}</label>
                     </div>
                   ))}
                 </div>
@@ -120,11 +120,11 @@ export default function GroceryListPage() {
       </div>
 
       {/* Bottom Navigation Bar */}
-      <div className="fixed bottom-0 left-0 w-full bg-gray-800 text-white flex justify-around items-center h-16 shadow-inner z-50">
-        <button onClick={() => router.push('/dashboard')} className="hover:text-green-400">Home</button>
-        <button onClick={() => router.push('/meals')} className="hover:text-green-400">Meals</button>
-        <button onClick={() => router.push('/grocerylist')} className="hover:text-green-400">Grocery List</button>
-        <button onClick={() => router.push('/profile')} className="hover:text-green-400">Profile</button>
+      <div className="fixed bottom-0 left-0 w-full bg-white/20 backdrop-blur-md text-white flex justify-around items-center h-16 shadow-inner z-50">
+        <button onClick={() => router.push('/dashboard')} className="hover:text-gray-100">Home</button>
+        <button onClick={() => router.push('/meals')} className="hover:text-gray-100">Meals</button>
+        <button onClick={() => router.push('/grocerylist')} className="hover:text-gray-100">Grocery List</button>
+        <button onClick={() => router.push('/profile')} className="hover:text-gray-100">Profile</button>
       </div>
     </div>
   )

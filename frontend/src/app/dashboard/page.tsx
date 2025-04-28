@@ -3,7 +3,6 @@
 import { useSession, signOut } from 'next-auth/react'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import axios from 'axios'
 import backendAPI from '@/lib/axiosInstance'
 
 const meals = [
@@ -76,26 +75,21 @@ export default function DashboardPage() {
 
   const handleSend = async () => {
     if (!newMessage.trim()) return
-  
-    // Add user's message first
-    setMessages((prev) => [...prev, { role: 'user', content: newMessage }]);
-  
+
+    setMessages((prev) => [...prev, { role: 'user', content: newMessage }])
+
     try {
-      const response = await backendAPI.post('/chatbot/', {
-        message: newMessage   // ✅ correct parameter name for your FastAPI backend
-      });
-      const aiReply = response.data.response;
-      
-      // Add AI's reply after user's message
-      setMessages((prev) => [...prev, { role: 'user', content: newMessage }, { role: 'ai', content: aiReply }]);
+      const response = await backendAPI.post('/chatbot/', { message: newMessage })
+      const aiReply = response.data.response
+      setMessages((prev) => [...prev, { role: 'user', content: newMessage }, { role: 'ai', content: aiReply }])
     } catch (error) {
-      console.error('Error sending message:', error);
-      setMessages((prev) => [...prev, { role: 'ai', content: "⚠️ Sorry, something went wrong." }]);
+      console.error('Error sending message:', error)
+      setMessages((prev) => [...prev, { role: 'ai', content: "⚠️ Sorry, something went wrong." }])
     }
-  
-    setNewMessage('');
-  };
-  
+
+    setNewMessage('')
+  }
+
   const openModal = (meal: any) => {
     setSelectedMeal(meal)
   }
@@ -108,22 +102,23 @@ export default function DashboardPage() {
   if (status === 'unauthenticated') return <p>You must be logged in to view this page.</p>
 
   return (
-    <div className="pb-20 bg-gray-100 min-h-screen">
-      <div className="flex justify-between items-center p-6 bg-white rounded-xl shadow-sm m-6 border">
-        <h1 className="text-2xl font-semibold text-gray-800">Welcome, {session?.user?.name}</h1>
+    <div className="pb-20 min-h-screen bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 animate-gradient">
+      <div className="flex justify-between items-center p-6 m-6 bg-white/30 backdrop-blur-lg rounded-xl shadow-lg">
+        <h1 className="text-2xl font-semibold text-white">Welcome, {session?.user?.name}</h1>
         <div className="flex items-center space-x-4">
           {session?.user?.image && (
             <img src={session.user.image} alt="User Profile" className="w-10 h-10 rounded-full object-cover border" />
           )}
-          <button onClick={() => signOut()} className="px-3 py-2 bg-gray-200 hover:bg-gray-300 rounded-lg text-sm font-medium text-gray-700">
+          <button onClick={() => signOut()} className="px-3 py-2 bg-white/30 hover:bg-white/50 rounded-lg text-sm font-medium text-white">
             Sign Out
           </button>
         </div>
       </div>
 
       <div className="flex gap-6 px-6">
-        <div className="w-[30%] bg-white p-5 rounded-xl shadow-sm border">
-          <h2 className="text-lg font-semibold text-gray-700 mb-4">Your Calendar</h2>
+        {/* Calendar Section */}
+        <div className="w-[30%] bg-white/30 backdrop-blur-lg p-5 rounded-xl shadow-md">
+          <h2 className="text-lg font-semibold text-white mb-4">Your Calendar</h2>
           <iframe
             src={`https://calendar.google.com/calendar/embed?src=${session?.user?.email}&ctz=America%2FNew_York&mode=AGENDA`}
             style={{ border: 0, width: '100%', height: '90%' }}
@@ -131,49 +126,50 @@ export default function DashboardPage() {
           />
         </div>
 
+        {/* Middle Column */}
         <div className="flex flex-col gap-6 w-[35%]">
-          {/* Meal Analytics Section */}
-          <div className="p-5 bg-white rounded-xl shadow-sm border">
-            <h2 className="text-lg font-semibold text-gray-700 mb-6">Meal Analytics</h2>
+          {/* Meal Analytics */}
+          <div className="p-5 bg-white/30 backdrop-blur-lg rounded-xl shadow-md">
+            <h2 className="text-lg font-semibold text-white mb-6">Meal Analytics</h2>
             {analytics ? (
               <div className="flex flex-col items-center">
                 <div className="flex space-x-10 mb-6">
-                  <ProgressCircle label="Protein" progress={analytics.average_macros_per_meal.protein} color="text-blue-500" />
-                  <ProgressCircle label="Carbs" progress={analytics.average_macros_per_meal.carbs} color="text-green-500" />
-                  <ProgressCircle label="Fats" progress={analytics.average_macros_per_meal.fats} color="text-yellow-500" />
+                  <ProgressCircle label="Protein" progress={analytics.average_macros_per_meal.protein} color="text-blue-400" />
+                  <ProgressCircle label="Carbs" progress={analytics.average_macros_per_meal.carbs} color="text-green-400" />
+                  <ProgressCircle label="Fats" progress={analytics.average_macros_per_meal.fats} color="text-yellow-300" />
                 </div>
-                <div className="text-center text-gray-600 text-sm">
+                <div className="text-center text-white text-sm">
                   <p>Avg Calories: {analytics.average_calories_per_meal} kcal</p>
                   <p>Goal Tracking: {analytics.goal_tracking}</p>
                   <p>Popular Times: {analytics.most_popular_meal_times.join(", ")}</p>
                 </div>
               </div>
             ) : (
-              <p>Loading analytics...</p>
+              <p className="text-white">Loading analytics...</p>
             )}
           </div>
 
-          {/* Potential Meals Section */}
-          <div className="p-5 bg-white rounded-xl shadow-sm border">
+          {/* Potential Meals */}
+          <div className="p-5 bg-white/30 backdrop-blur-lg rounded-xl shadow-md">
             <h2
-              className="text-lg font-semibold text-gray-700 mb-6 cursor-pointer hover:underline"
+              className="text-lg font-semibold text-white mb-6 cursor-pointer hover:underline"
               onClick={() => router.push('/meals')}
             >
               Potential Meals
             </h2>
             <div className="relative w-full overflow-hidden">
-            <style jsx>{`
-              @keyframes scroll {
-                0% { transform: translateX(0); }
-                100% { transform: translateX(-50%); }
-              }
-            `}</style>
+              <style jsx>{`
+                @keyframes scroll {
+                  0% { transform: translateX(0); }
+                  100% { transform: translateX(-50%); }
+                }
+              `}</style>
               <div className="flex animate-scroll whitespace-nowrap" style={{ animation: 'scroll 20s linear infinite' }}>
                 {[...meals, ...meals].map((meal, index) => (
                   <div
                     key={index}
                     onClick={() => openModal(meal)}
-                    className="cursor-pointer flex-shrink-0 w-[220px] h-[220px] mx-2 bg-gray-50 rounded-xl shadow-sm flex flex-col justify-center items-center border border-gray-200"
+                    className="cursor-pointer flex-shrink-0 w-[220px] h-[220px] mx-2 bg-white/40 backdrop-blur-md rounded-xl shadow-md flex flex-col justify-center items-center border border-white/30"
                   >
                     <h3 className="text-base font-semibold text-gray-800">{meal.title}</h3>
                     <p className="mt-2 text-xs text-gray-600 text-center px-4">{meal.description}</p>
@@ -184,12 +180,15 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        <div className="w-[30%] bg-white rounded-xl shadow-sm border p-5 flex flex-col h-[700px]">
-          <h2 className="text-lg font-semibold text-gray-700 mb-4">Chat Assistant</h2>
-          <div className="flex-1 bg-gray-50 rounded-lg p-4 overflow-y-auto space-y-4">
+        {/* Chat Assistant */}
+        <div className="w-[30%] bg-white/30 backdrop-blur-lg rounded-xl shadow-md p-5 flex flex-col h-[700px]">
+          <h2 className="text-lg font-semibold text-white mb-4">Chat Assistant</h2>
+          <div className="flex-1 bg-white/20 rounded-lg p-4 overflow-y-auto space-y-4">
             {messages.map((msg, index) => (
               <div key={index} className={`text-${msg.role === 'user' ? 'right' : 'left'}`}>
-                <div className={`inline-block px-3 py-2 rounded-lg ${msg.role === 'user' ? 'bg-blue-100' : 'bg-gray-200'}`}>{msg.content}</div>
+                <div className={`inline-block px-3 py-2 rounded-lg ${msg.role === 'user' ? 'bg-blue-200' : 'bg-gray-200'}`}>
+                  {msg.content}
+                </div>
               </div>
             ))}
           </div>
@@ -200,15 +199,16 @@ export default function DashboardPage() {
               onKeyDown={(e) => { if (e.key === 'Enter') handleSend() }}
               type="text"
               placeholder="Type your message..."
-              className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-1 focus:ring-gray-300 text-sm"
+              className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-1 focus:ring-white text-sm bg-white/30 text-white placeholder-white"
             />
-            <button onClick={handleSend} className="ml-2 px-3 py-2 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-lg text-sm font-medium">
+            <button onClick={handleSend} className="ml-2 px-3 py-2 bg-white/30 hover:bg-white/50 text-white rounded-lg text-sm font-medium">
               Send
             </button>
           </div>
         </div>
       </div>
 
+      {/* Meal Modal */}
       {selectedMeal && (
         <div className="fixed inset-0 bg-white/20 backdrop-blur-md flex justify-center items-center z-50">
           <div className="bg-white p-8 rounded-xl max-w-md w-full shadow-md">
@@ -222,11 +222,12 @@ export default function DashboardPage() {
         </div>
       )}
 
-      <div className="fixed bottom-0 left-0 w-full bg-white text-gray-700 border-t flex justify-around items-center h-16 z-50">
-        <button onClick={() => router.push('/')} className="hover:text-gray-900">Home</button>
-        <button onClick={() => router.push('/meals')} className="hover:text-gray-900">Meals</button>
-        <button onClick={() => router.push('/grocerylist')} className="hover:text-gray-900">Grocery List</button>
-        <button onClick={() => router.push('/profile')} className="hover:text-gray-900">Profile</button>
+      {/* Bottom Navbar */}
+      <div className="fixed bottom-0 left-0 w-full bg-white/20 backdrop-blur-lg text-white border-t flex justify-around items-center h-16 z-50">
+        <button onClick={() => router.push('/')} className="hover:text-gray-100">Home</button>
+        <button onClick={() => router.push('/meals')} className="hover:text-gray-100">Meals</button>
+        <button onClick={() => router.push('/grocerylist')} className="hover:text-gray-100">Grocery List</button>
+        <button onClick={() => router.push('/profile')} className="hover:text-gray-100">Profile</button>
       </div>
     </div>
   )

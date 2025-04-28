@@ -33,159 +33,177 @@ __turbopack_context__.s({
     "default": (()=>PreferencesPage)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-ssr] (ecmascript)");
+(()=>{
+    const e = new Error("Cannot find module 'framer-motion'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 'use client';
 ;
 ;
+;
+;
+const steps = [
+    {
+        question: 'Goals?',
+        options: [
+            'Loose Weight',
+            'Gain Weight',
+            'Eat Healthy',
+            'Build Muscle',
+            'Save money',
+            'Save time'
+        ],
+        key: 'diet'
+    },
+    {
+        question: 'Do you have any allergies?',
+        options: [
+            'Dairy',
+            'Nuts',
+            'Gluten',
+            'No Allergies'
+        ],
+        key: 'allergies'
+    },
+    {
+        question: 'Dietery Restrictions?',
+        options: [
+            'Vegan',
+            'Vegetarian',
+            'Halal',
+            'None'
+        ],
+        key: 'cuisine'
+    }
+];
 function PreferencesPage() {
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
+    const [currentStep, setCurrentStep] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
+    const [answers, setAnswers] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
+        diet: '',
+        allergies: '',
+        cuisine: ''
+    });
+    const handleOptionSelect = (option)=>{
+        const key = steps[currentStep].key;
+        setAnswers((prev)=>({
+                ...prev,
+                [key]: option
+            }));
+    };
+    const handleNext = ()=>{
+        if (currentStep < steps.length - 1) {
+            setCurrentStep((prev)=>prev + 1);
+        } else {
+            console.log('Final answers:', answers);
+            // You could send answers to backend here
+            router.push('/dashboard');
+        }
+    };
+    const handleBack = ()=>{
+        if (currentStep > 0) {
+            setCurrentStep((prev)=>prev - 1);
+        } else {
+            router.back();
+        }
+    };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-screen bg-gray-100 p-8",
+        className: "min-h-screen bg-gray-100 flex items-center justify-center p-6",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "max-w-3xl mx-auto bg-white shadow-md rounded-xl p-8",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                    className: "text-3xl font-bold text-gray-800 mb-6",
-                    children: "Preferences"
-                }, void 0, false, {
-                    fileName: "[project]/src/app/preference/page.tsx",
-                    lineNumber: 11,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex flex-col gap-4",
+            className: "bg-white rounded-xl shadow-lg p-8 max-w-md w-full",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AnimatePresence, {
+                mode: "wait",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(motion.div, {
+                    initial: {
+                        opacity: 0,
+                        x: 100
+                    },
+                    animate: {
+                        opacity: 1,
+                        x: 0
+                    },
+                    exit: {
+                        opacity: 0,
+                        x: -100
+                    },
+                    transition: {
+                        duration: 0.5
+                    },
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex justify-between items-center",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-lg font-medium text-gray-700",
-                                    children: "Dark Mode"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/preference/page.tsx",
-                                    lineNumber: 15,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    className: "bg-gray-200 hover:bg-gray-300 rounded-lg px-4 py-2 text-sm font-medium",
-                                    children: "Enable"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/preference/page.tsx",
-                                    lineNumber: 16,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                            className: "text-2xl font-bold text-gray-800 mb-6",
+                            children: steps[currentStep].question
+                        }, void 0, false, {
                             fileName: "[project]/src/app/preference/page.tsx",
-                            lineNumber: 14,
-                            columnNumber: 11
+                            lineNumber: 68,
+                            columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex justify-between items-center",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-lg font-medium text-gray-700",
-                                    children: "Email Notifications"
-                                }, void 0, false, {
+                            className: "flex flex-col gap-4",
+                            children: steps[currentStep].options.map((option)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: ()=>handleOptionSelect(option),
+                                    className: `px-4 py-2 rounded-lg border text-gray-700 hover:bg-gray-100 ${answers[steps[currentStep].key] === option ? 'bg-blue-100 border-blue-400' : 'border-gray-300'}`,
+                                    children: option
+                                }, option, false, {
                                     fileName: "[project]/src/app/preference/page.tsx",
-                                    lineNumber: 20,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    className: "bg-gray-200 hover:bg-gray-300 rounded-lg px-4 py-2 text-sm font-medium",
-                                    children: "Manage"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/preference/page.tsx",
-                                    lineNumber: 21,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                                    lineNumber: 73,
+                                    columnNumber: 17
+                                }, this))
+                        }, void 0, false, {
                             fileName: "[project]/src/app/preference/page.tsx",
-                            lineNumber: 19,
-                            columnNumber: 11
+                            lineNumber: 71,
+                            columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex justify-between items-center",
+                            className: "flex justify-between mt-6",
                             children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-lg font-medium text-gray-700",
-                                    children: "Language Preference"
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: handleBack,
+                                    className: "px-6 py-2 bg-gray-300 hover:bg-gray-400 text-gray-800 rounded-lg",
+                                    children: "Back"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/preference/page.tsx",
-                                    lineNumber: 25,
-                                    columnNumber: 13
+                                    lineNumber: 83,
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    className: "bg-gray-200 hover:bg-gray-300 rounded-lg px-4 py-2 text-sm font-medium",
-                                    children: "Change"
+                                    onClick: handleNext,
+                                    className: "px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg",
+                                    disabled: !answers[steps[currentStep].key],
+                                    children: currentStep === steps.length - 1 ? 'Finish' : 'Next'
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/preference/page.tsx",
-                                    lineNumber: 26,
-                                    columnNumber: 13
+                                    lineNumber: 89,
+                                    columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/preference/page.tsx",
-                            lineNumber: 24,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex justify-between items-center",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-lg font-medium text-gray-700",
-                                    children: "Privacy Settings"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/preference/page.tsx",
-                                    lineNumber: 30,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    className: "bg-gray-200 hover:bg-gray-300 rounded-lg px-4 py-2 text-sm font-medium",
-                                    children: "Edit"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/app/preference/page.tsx",
-                                    lineNumber: 31,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/app/preference/page.tsx",
-                            lineNumber: 29,
-                            columnNumber: 11
+                            lineNumber: 82,
+                            columnNumber: 13
                         }, this)
                     ]
-                }, void 0, true, {
+                }, currentStep, true, {
                     fileName: "[project]/src/app/preference/page.tsx",
-                    lineNumber: 13,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "mt-8",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>router.back(),
-                        className: "px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg",
-                        children: "Back"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/preference/page.tsx",
-                        lineNumber: 36,
-                        columnNumber: 11
-                    }, this)
-                }, void 0, false, {
-                    fileName: "[project]/src/app/preference/page.tsx",
-                    lineNumber: 35,
-                    columnNumber: 9
+                    lineNumber: 61,
+                    columnNumber: 11
                 }, this)
-            ]
-        }, void 0, true, {
+            }, void 0, false, {
+                fileName: "[project]/src/app/preference/page.tsx",
+                lineNumber: 60,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
             fileName: "[project]/src/app/preference/page.tsx",
-            lineNumber: 10,
+            lineNumber: 59,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/preference/page.tsx",
-        lineNumber: 9,
+        lineNumber: 58,
         columnNumber: 5
     }, this);
 }
