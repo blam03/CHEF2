@@ -32,6 +32,20 @@ const meals = [
   },
 ]
 
+const handleAddMealToGroceryList = (meal: any) => {
+  const existingMeals = JSON.parse(localStorage.getItem('groceryMeals') || '[]')
+
+  const alreadyAdded = existingMeals.some((m: any) => m.title === meal.title)
+
+  if (alreadyAdded) {
+    alert('This meal is already in your Grocery List! 🚫')
+  } else {
+    const updatedMeals = [...existingMeals, meal]
+    localStorage.setItem('groceryMeals', JSON.stringify(updatedMeals))
+    alert('Meal added to Grocery List! ✅')
+  }
+}
+
 
 function ProgressCircle({
   label,
@@ -117,8 +131,6 @@ export default function DashboardPage() {
 
   return (
     <div className="pb-20 min-h-screen bg-gradient-to-r from-orange-400 via-red-500 to-pink-500 animate-gradient">
-
-
       {/* Header */}
       <div className="flex justify-between items-center p-6 m-6 bg-white/30 backdrop-blur-lg rounded-xl shadow-lg">
         <h1 className="text-2xl font-semibold text-white">Welcome, {session?.user?.name}</h1>
@@ -134,7 +146,7 @@ export default function DashboardPage() {
           </button>
         </div>
       </div>
-      
+
       <div className="flex gap-6 px-6">
         {/* Calendar */}
         <div className="w-[30%] bg-white/30 backdrop-blur-lg p-5 rounded-xl shadow-md">
