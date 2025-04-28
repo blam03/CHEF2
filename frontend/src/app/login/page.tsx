@@ -12,7 +12,7 @@ export default function LoginPage() {
   }, [])
 
   const handleLogin = () => {
-    signIn("google", { callbackUrl: "/dashboard" })
+    signIn("google", { callbackUrl: "/preference"})
   }
 
   const navigateTo = (path: string) => {

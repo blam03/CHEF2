@@ -24,72 +24,76 @@ const mod = __turbopack_context__.x("next/dist/server/app-render/work-async-stor
 
 module.exports = mod;
 }}),
-"[project]/src/app/login/page.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"[project]/src/app/subscription/page.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>LoginPage)
+    "default": (()=>SubscriptionPage)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/styled-jsx/style.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-auth/react/index.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-ssr] (ecmascript)");
 'use client';
 ;
 ;
 ;
-;
-;
-function LoginPage() {
+function SubscriptionPage() {
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        document.title = "Login – Chef";
-    }, []);
-    const handleLogin = ()=>{
-        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["signIn"])("google", {
-            callbackUrl: "/preference"
-        });
-    };
     const navigateTo = (path)=>{
         router.push(path);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "jsx-6eda9863f2363db3" + " " + "min-h-screen flex flex-col",
+        className: "jsx-6eda9863f2363db3" + " " + "min-h-screen flex flex-col relative overflow-hidden",
         children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "jsx-6eda9863f2363db3" + " " + "absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,#FFAD60,#FF6B6B,#FF4E00)] animate-pulseBackground bg-cover bg-no-repeat z-0"
+            }, void 0, false, {
+                fileName: "[project]/src/app/subscription/page.tsx",
+                lineNumber: 16,
+                columnNumber: 7
+            }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-                className: "jsx-6eda9863f2363db3" + " " + "flex justify-between items-center px-8 py-4 bg-white/20 backdrop-blur-md text-black z-20",
+                className: "jsx-6eda9863f2363db3" + " " + "flex justify-between items-center px-8 py-4 bg-white/20 backdrop-blur-md text-black z-10 relative",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         onClick: ()=>navigateTo("/"),
                         className: "jsx-6eda9863f2363db3" + " " + "text-2xl font-bold cursor-pointer",
                         children: "CHEF"
                     }, void 0, false, {
-                        fileName: "[project]/src/app/login/page.tsx",
-                        lineNumber: 27,
+                        fileName: "[project]/src/app/subscription/page.tsx",
+                        lineNumber: 20,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "jsx-6eda9863f2363db3" + " " + "flex gap-6 text-lg font-semibold",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: ()=>navigateTo("/about"),
+                                onClick: ()=>navigateTo("/"),
                                 className: "jsx-6eda9863f2363db3" + " " + "hover:underline",
-                                children: "About Us"
+                                children: "Home"
                             }, void 0, false, {
-                                fileName: "[project]/src/app/login/page.tsx",
-                                lineNumber: 31,
+                                fileName: "[project]/src/app/subscription/page.tsx",
+                                lineNumber: 24,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>navigateTo("/about"),
                                 className: "jsx-6eda9863f2363db3" + " " + "hover:underline",
-                                children: "Login"
+                                children: "About Us"
                             }, void 0, false, {
-                                fileName: "[project]/src/app/login/page.tsx",
-                                lineNumber: 32,
+                                fileName: "[project]/src/app/subscription/page.tsx",
+                                lineNumber: 25,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: ()=>navigateTo("/subscription"),
+                                className: "jsx-6eda9863f2363db3" + " " + "hover:underline",
+                                children: "Subscription"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/subscription/page.tsx",
+                                lineNumber: 26,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -97,80 +101,291 @@ function LoginPage() {
                                 className: "jsx-6eda9863f2363db3" + " " + "hover:underline",
                                 children: "Contact"
                             }, void 0, false, {
-                                fileName: "[project]/src/app/login/page.tsx",
-                                lineNumber: 33,
+                                fileName: "[project]/src/app/subscription/page.tsx",
+                                lineNumber: 27,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
-                        fileName: "[project]/src/app/login/page.tsx",
-                        lineNumber: 30,
+                        fileName: "[project]/src/app/subscription/page.tsx",
+                        lineNumber: 23,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "[project]/src/app/login/page.tsx",
-                lineNumber: 26,
+                fileName: "[project]/src/app/subscription/page.tsx",
+                lineNumber: 19,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-6eda9863f2363db3" + " " + "flex-grow flex items-center justify-center p-4 relative overflow-hidden",
+                className: "jsx-6eda9863f2363db3" + " " + "flex-grow flex flex-col items-center justify-center p-8 relative z-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-6eda9863f2363db3" + " " + "absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,#FFAD60,#FF6B6B,#FF4E00)] animate-pulseBackground bg-cover bg-no-repeat"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/login/page.tsx",
+                        className: "jsx-6eda9863f2363db3" + " " + "text-center space-y-6 mb-12",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                className: "jsx-6eda9863f2363db3" + " " + "text-5xl font-bold text-white",
+                                children: "Choose Your Plan"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/subscription/page.tsx",
+                                lineNumber: 36,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "jsx-6eda9863f2363db3" + " " + "text-lg text-white",
+                                children: "Flexible plans for every chef!"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/subscription/page.tsx",
+                                lineNumber: 37,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/subscription/page.tsx",
+                        lineNumber: 35,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "jsx-6eda9863f2363db3" + " " + "grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl w-full",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-6eda9863f2363db3" + " " + "bg-white/20 backdrop-blur-xl border-2 border-orange-300 rounded-2xl p-8 shadow-2xl flex flex-col justify-between hover:scale-105 transition-transform text-center",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-6eda9863f2363db3" + " " + "flex-grow space-y-6",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                className: "jsx-6eda9863f2363db3" + " " + "text-3xl font-bold text-white",
+                                                children: "Weekly"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/subscription/page.tsx",
+                                                lineNumber: 47,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "jsx-6eda9863f2363db3" + " " + "text-white text-2xl font-semibold",
+                                                children: "$4.99 / week"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/subscription/page.tsx",
+                                                lineNumber: 48,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                className: "jsx-6eda9863f2363db3" + " " + "text-white text-sm space-y-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                        className: "jsx-6eda9863f2363db3",
+                                                        children: "✔️ Personalized Meal Plans"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/subscription/page.tsx",
+                                                        lineNumber: 50,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                        className: "jsx-6eda9863f2363db3",
+                                                        children: "✔️ Google Calendar Integration"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/subscription/page.tsx",
+                                                        lineNumber: 51,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                        className: "jsx-6eda9863f2363db3",
+                                                        children: "❌ Delivery fee not included"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/subscription/page.tsx",
+                                                        lineNumber: 52,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/subscription/page.tsx",
+                                                lineNumber: 49,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/subscription/page.tsx",
+                                        lineNumber: 46,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        onClick: ()=>alert('Subscribed to Weekly Plan!'),
+                                        className: "jsx-6eda9863f2363db3" + " " + "mt-6 px-6 py-3 bg-[#FF6B6B] hover:bg-[#FF4E00] text-white rounded-xl font-semibold transition transform hover:scale-105",
+                                        children: "Subscribe"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/subscription/page.tsx",
+                                        lineNumber: 56,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/subscription/page.tsx",
+                                lineNumber: 44,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-6eda9863f2363db3" + " " + "bg-white/20 backdrop-blur-xl border-2 border-orange-400 rounded-2xl p-8 shadow-2xl flex flex-col justify-between hover:scale-105 transition-transform text-center",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-6eda9863f2363db3" + " " + "flex-grow space-y-6",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                className: "jsx-6eda9863f2363db3" + " " + "text-3xl font-bold text-white",
+                                                children: "Monthly"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/subscription/page.tsx",
+                                                lineNumber: 69,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "jsx-6eda9863f2363db3" + " " + "text-white text-2xl font-semibold",
+                                                children: "$14.99 / month"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/subscription/page.tsx",
+                                                lineNumber: 70,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                className: "jsx-6eda9863f2363db3" + " " + "text-white text-sm space-y-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                        className: "jsx-6eda9863f2363db3",
+                                                        children: "✔️ All Features"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/subscription/page.tsx",
+                                                        lineNumber: 72,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                        className: "jsx-6eda9863f2363db3",
+                                                        children: "✔️ Including covering delivery fee"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/subscription/page.tsx",
+                                                        lineNumber: 73,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/subscription/page.tsx",
+                                                lineNumber: 71,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/subscription/page.tsx",
+                                        lineNumber: 68,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        onClick: ()=>alert('Subscribed to Monthly Plan!'),
+                                        className: "jsx-6eda9863f2363db3" + " " + "mt-6 px-6 py-3 bg-[#FF6B6B] hover:bg-[#FF4E00] text-white rounded-xl font-semibold transition transform hover:scale-105",
+                                        children: "Subscribe"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/subscription/page.tsx",
+                                        lineNumber: 77,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/subscription/page.tsx",
+                                lineNumber: 66,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "jsx-6eda9863f2363db3" + " " + "bg-white/20 backdrop-blur-xl border-2 border-orange-500 rounded-2xl p-8 shadow-2xl flex flex-col justify-between hover:scale-105 transition-transform text-center",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "jsx-6eda9863f2363db3" + " " + "flex-grow space-y-6",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                className: "jsx-6eda9863f2363db3" + " " + "text-3xl font-bold text-white",
+                                                children: "Annually"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/subscription/page.tsx",
+                                                lineNumber: 90,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "jsx-6eda9863f2363db3" + " " + "text-white text-2xl font-semibold",
+                                                children: "$149.99 / year"
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/app/subscription/page.tsx",
+                                                lineNumber: 91,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                                className: "jsx-6eda9863f2363db3" + " " + "text-white text-sm space-y-2",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                        className: "jsx-6eda9863f2363db3",
+                                                        children: "✔️ All Features"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/subscription/page.tsx",
+                                                        lineNumber: 93,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                        className: "jsx-6eda9863f2363db3",
+                                                        children: "✔️ Including covering delivery fee"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/subscription/page.tsx",
+                                                        lineNumber: 94,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/app/subscription/page.tsx",
+                                                lineNumber: 92,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/app/subscription/page.tsx",
+                                        lineNumber: 89,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        onClick: ()=>alert('Subscribed to Annual Plan!'),
+                                        className: "jsx-6eda9863f2363db3" + " " + "mt-6 px-6 py-3 bg-[#FF6B6B] hover:bg-[#FF4E00] text-white rounded-xl font-semibold transition transform hover:scale-105",
+                                        children: "Subscribe"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/subscription/page.tsx",
+                                        lineNumber: 98,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/subscription/page.tsx",
+                                lineNumber: 87,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/subscription/page.tsx",
                         lineNumber: 41,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-6eda9863f2363db3" + " " + "relative z-10 backdrop-blur-xl bg-white/10 border-2 border-orange-200 shadow-2xl rounded-2xl p-16 max-w-lg w-full text-center",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "jsx-6eda9863f2363db3" + " " + "text-6xl font-extrabold text-white mb-10 tracking-widest drop-shadow-[0_0_30px_white,0_0_45px_#FFAD60,0_0_60px_#FF6B6B]",
-                                children: "CHEF"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/login/page.tsx",
-                                lineNumber: 46,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: handleLogin,
-                                className: "jsx-6eda9863f2363db3" + " " + "w-full py-3 bg-[#FF6B6B] hover:bg-[#FF4E00] text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all transform hover:scale-105 text-lg",
-                                children: "Sign in with Google"
-                            }, void 0, false, {
-                                fileName: "[project]/src/app/login/page.tsx",
-                                lineNumber: 51,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "jsx-6eda9863f2363db3" + " " + "mt-6 text-white font-bold",
-                                children: [
-                                    "Don't have an account? ",
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "jsx-6eda9863f2363db3" + " " + "underline cursor-pointer",
-                                        children: "Sign up"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/login/page.tsx",
-                                        lineNumber: 60,
-                                        columnNumber: 36
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/login/page.tsx",
-                                lineNumber: 59,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/app/login/page.tsx",
-                        lineNumber: 44,
+                        className: "jsx-6eda9863f2363db3" + " " + "mt-16 text-center",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: ()=>router.push("/dashboard"),
+                            className: "jsx-6eda9863f2363db3" + " " + "px-8 py-4 bg-green-500 hover:bg-green-600 text-white rounded-xl font-bold text-lg transition transform hover:scale-105",
+                            children: "Continue to Free 7-Day Trial"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/subscription/page.tsx",
+                            lineNumber: 111,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/subscription/page.tsx",
+                        lineNumber: 110,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "[project]/src/app/login/page.tsx",
-                lineNumber: 38,
+                fileName: "[project]/src/app/subscription/page.tsx",
+                lineNumber: 32,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -179,8 +394,8 @@ function LoginPage() {
             }, void 0, false, void 0, this)
         ]
     }, void 0, true, {
-        fileName: "[project]/src/app/login/page.tsx",
-        lineNumber: 23,
+        fileName: "[project]/src/app/subscription/page.tsx",
+        lineNumber: 13,
         columnNumber: 5
     }, this);
 }
@@ -2519,4 +2734,4 @@ module.exports = __turbopack_context__.r("[project]/node_modules/next/dist/clien
 
 };
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__41be35d5._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__531c95ae._.js.map

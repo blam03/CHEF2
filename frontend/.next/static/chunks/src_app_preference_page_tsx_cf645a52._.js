@@ -115,7 +115,7 @@ function PreferencesPage() {
             setCurrentStep((prev)=>prev + 1);
         } else {
             console.log('Final answers:', answers);
-            router.push('/dashboard');
+            router.push('/subscription');
         }
     };
     const handleBack = ()=>{
