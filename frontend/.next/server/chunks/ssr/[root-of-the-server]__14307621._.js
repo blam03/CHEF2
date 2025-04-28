@@ -41,62 +41,22 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navi
 ;
 ;
 ;
-const meals = [
-    {
-        title: 'Pizza',
-        ingredients: [
-            'Dough',
-            'Tomato Sauce',
-            'Mozzarella',
-            'Pepperoni',
-            'Basil'
-        ]
-    },
-    {
-        title: 'Tacos',
-        ingredients: [
-            'Tortillas',
-            'Ground Beef',
-            'Lettuce',
-            'Cheddar',
-            'Salsa'
-        ]
-    },
-    {
-        title: 'Pasta',
-        ingredients: [
-            'Spaghetti',
-            'Marinara Sauce',
-            'Meatballs',
-            'Parmesan'
-        ]
-    },
-    {
-        title: 'Salad',
-        ingredients: [
-            'Romaine Lettuce',
-            'Cherry Tomatoes',
-            'Cucumber',
-            'Croutons',
-            'Ranch Dressing'
-        ]
-    },
-    {
-        title: 'Stir Fry',
-        ingredients: [
-            'Chicken Breast',
-            'Broccoli',
-            'Carrots',
-            'Soy Sauce',
-            'Rice'
-        ]
-    }
-];
 function GroceryListPage() {
     const { data: session, status } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useSession"])();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
+    const [mealsList, setMealsList] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]) // get meals from localStorage
+    ;
     const [selectedIngredients, setSelectedIngredients] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
     const [expandedMeal, setExpandedMeal] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        const savedMeals = JSON.parse(localStorage.getItem('groceryMeals') || '[]');
+        setMealsList(savedMeals);
+    }, []);
+    const removeMeal = (mealTitle)=>{
+        const updatedMeals = mealsList.filter((meal)=>meal.title !== mealTitle);
+        setMealsList(updatedMeals);
+        localStorage.setItem('groceryMeals', JSON.stringify(updatedMeals));
+    };
     const toggleIngredient = (ingredient)=>{
         if (selectedIngredients.includes(ingredient)) {
             setSelectedIngredients(selectedIngredients.filter((item)=>item !== ingredient));
@@ -114,14 +74,14 @@ function GroceryListPage() {
         children: "Loading..."
     }, void 0, false, {
         fileName: "[project]/src/app/grocerylist/page.tsx",
-        lineNumber: 49,
+        lineNumber: 38,
         columnNumber: 36
     }, this);
     if (status === 'unauthenticated') return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
         children: "You must be logged in to view this page."
     }, void 0, false, {
         fileName: "[project]/src/app/grocerylist/page.tsx",
-        lineNumber: 50,
+        lineNumber: 39,
         columnNumber: 44
     }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -139,7 +99,7 @@ function GroceryListPage() {
                                 className: "w-32 h-32 rounded-full border-4 border-white object-cover"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/grocerylist/page.tsx",
-                                lineNumber: 58,
+                                lineNumber: 46,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -147,13 +107,13 @@ function GroceryListPage() {
                                 children: session?.user?.name || 'Grocery Planner'
                             }, void 0, false, {
                                 fileName: "[project]/src/app/grocerylist/page.tsx",
-                                lineNumber: 63,
+                                lineNumber: 51,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/grocerylist/page.tsx",
-                        lineNumber: 57,
+                        lineNumber: 45,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -164,7 +124,7 @@ function GroceryListPage() {
                                 children: "Your Grocery List"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/grocerylist/page.tsx",
-                                lineNumber: 68,
+                                lineNumber: 55,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -172,19 +132,19 @@ function GroceryListPage() {
                                 children: "Pick your ingredients easily and head to Instacart! 🛒"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/grocerylist/page.tsx",
-                                lineNumber: 69,
+                                lineNumber: 56,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/grocerylist/page.tsx",
-                        lineNumber: 67,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/grocerylist/page.tsx",
-                lineNumber: 55,
+                lineNumber: 44,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -195,100 +155,125 @@ function GroceryListPage() {
                         children: "Saved Meals"
                     }, void 0, false, {
                         fileName: "[project]/src/app/grocerylist/page.tsx",
-                        lineNumber: 77,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-col gap-6 w-full max-w-4xl",
-                        children: meals.map((meal)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "bg-white/30 backdrop-blur-lg p-6 rounded-xl shadow-md border border-white/20",
+                        className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-6xl",
+                        children: mealsList.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-white",
+                            children: "No meals added yet! Go add some meals first 🍽️"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/grocerylist/page.tsx",
+                            lineNumber: 69,
+                            columnNumber: 13
+                        }, this) : mealsList.map((meal)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "bg-white/30 backdrop-blur-lg p-6 rounded-xl shadow-md border border-white/20 flex flex-col justify-between",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex justify-between items-center",
+                                        className: "flex justify-between items-center mb-4",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                                 className: "text-xl font-bold text-gray-800",
                                                 children: meal.title
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/grocerylist/page.tsx",
-                                                lineNumber: 84,
-                                                columnNumber: 17
+                                                lineNumber: 74,
+                                                columnNumber: 19
                                             }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                                onClick: ()=>setExpandedMeal(expandedMeal === meal.title ? null : meal.title),
-                                                className: "text-green-500 hover:underline",
-                                                children: expandedMeal === meal.title ? 'Hide Ingredients' : 'Show Ingredients'
-                                            }, void 0, false, {
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex space-x-4",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        onClick: ()=>setExpandedMeal(expandedMeal === meal.title ? null : meal.title),
+                                                        className: "text-black hover:underline",
+                                                        children: expandedMeal === meal.title ? 'Hide' : 'Show'
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/grocerylist/page.tsx",
+                                                        lineNumber: 76,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        onClick: ()=>removeMeal(meal.title),
+                                                        className: "text-red-700 font-bold hover:underline",
+                                                        children: "Remove"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/app/grocerylist/page.tsx",
+                                                        lineNumber: 82,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/app/grocerylist/page.tsx",
-                                                lineNumber: 85,
-                                                columnNumber: 17
+                                                lineNumber: 75,
+                                                columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/grocerylist/page.tsx",
-                                        lineNumber: 83,
-                                        columnNumber: 15
+                                        lineNumber: 73,
+                                        columnNumber: 17
                                     }, this),
                                     expandedMeal === meal.title && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "mt-4 space-y-2",
+                                        className: "space-y-2",
                                         children: meal.ingredients.map((ingredient)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "flex items-center",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                         type: "checkbox",
-                                                        id: ingredient,
+                                                        id: `${meal.title}-${ingredient}`,
                                                         checked: selectedIngredients.includes(ingredient),
                                                         onChange: ()=>toggleIngredient(ingredient),
                                                         className: "mr-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/grocerylist/page.tsx",
-                                                        lineNumber: 97,
-                                                        columnNumber: 23
+                                                        lineNumber: 95,
+                                                        columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
-                                                        htmlFor: ingredient,
+                                                        htmlFor: `${meal.title}-${ingredient}`,
                                                         className: "text-gray-700",
                                                         children: ingredient
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/grocerylist/page.tsx",
-                                                        lineNumber: 104,
-                                                        columnNumber: 23
+                                                        lineNumber: 102,
+                                                        columnNumber: 25
                                                     }, this)
                                                 ]
                                             }, ingredient, true, {
                                                 fileName: "[project]/src/app/grocerylist/page.tsx",
-                                                lineNumber: 96,
-                                                columnNumber: 21
+                                                lineNumber: 94,
+                                                columnNumber: 23
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/grocerylist/page.tsx",
-                                        lineNumber: 94,
-                                        columnNumber: 17
+                                        lineNumber: 92,
+                                        columnNumber: 19
                                     }, this)
                                 ]
                             }, meal.title, true, {
                                 fileName: "[project]/src/app/grocerylist/page.tsx",
-                                lineNumber: 82,
-                                columnNumber: 13
+                                lineNumber: 72,
+                                columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/app/grocerylist/page.tsx",
-                        lineNumber: 80,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                    mealsList.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: handleAddToInstacart,
                         className: "mt-8 w-full max-w-md bg-green-500 hover:bg-green-600 text-white py-3 rounded-xl text-xl font-semibold",
                         children: "Open Instacart 🛒"
                     }, void 0, false, {
                         fileName: "[project]/src/app/grocerylist/page.tsx",
-                        lineNumber: 114,
-                        columnNumber: 9
+                        lineNumber: 116,
+                        columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/grocerylist/page.tsx",
-                lineNumber: 76,
+                lineNumber: 63,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -300,7 +285,7 @@ function GroceryListPage() {
                         children: "Home"
                     }, void 0, false, {
                         fileName: "[project]/src/app/grocerylist/page.tsx",
-                        lineNumber: 124,
+                        lineNumber: 127,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -309,7 +294,7 @@ function GroceryListPage() {
                         children: "Meals"
                     }, void 0, false, {
                         fileName: "[project]/src/app/grocerylist/page.tsx",
-                        lineNumber: 125,
+                        lineNumber: 128,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -318,7 +303,7 @@ function GroceryListPage() {
                         children: "Grocery List"
                     }, void 0, false, {
                         fileName: "[project]/src/app/grocerylist/page.tsx",
-                        lineNumber: 126,
+                        lineNumber: 129,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -327,19 +312,19 @@ function GroceryListPage() {
                         children: "Profile"
                     }, void 0, false, {
                         fileName: "[project]/src/app/grocerylist/page.tsx",
-                        lineNumber: 127,
+                        lineNumber: 130,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/grocerylist/page.tsx",
-                lineNumber: 123,
+                lineNumber: 126,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/grocerylist/page.tsx",
-        lineNumber: 53,
+        lineNumber: 42,
         columnNumber: 5
     }, this);
 }

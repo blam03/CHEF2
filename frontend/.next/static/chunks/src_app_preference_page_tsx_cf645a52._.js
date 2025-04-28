@@ -321,7 +321,7 @@ function PreferencesPage() {
         columnNumber: 5
     }, this);
 }
-_s(PreferencesPage, "Ri3zTuaJ4NAXQAeTensVddx+bP8=", false, function() {
+_s(PreferencesPage, "rf5dbUV0HoJoaAcuL/C88zk8D0M=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
     ];

@@ -67,13 +67,14 @@ function ProfilePage() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "p-6 bg-yellow-100 border rounded-lg hover:shadow-lg cursor-pointer transition",
+                                onClick: ()=>router.push('/settings'),
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                         className: "text-xl font-semibold text-gray-800",
                                         children: "Settings"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/profile/page.tsx",
-                                        lineNumber: 25,
+                                        lineNumber: 28,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -81,7 +82,7 @@ function ProfilePage() {
                                         children: "Manage your account settings and set preferences."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/profile/page.tsx",
-                                        lineNumber: 26,
+                                        lineNumber: 29,
                                         columnNumber: 13
                                     }, this)
                                 ]
@@ -99,37 +100,12 @@ function ProfilePage() {
                                         children: "Preferences"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/profile/page.tsx",
-                                        lineNumber: 31,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-sm text-gray-600",
-                                        children: "Adjust your app and notification preferences."
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/profile/page.tsx",
-                                        lineNumber: 32,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/app/profile/page.tsx",
-                                lineNumber: 30,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "p-6 bg-red-100 border rounded-lg hover:shadow-lg cursor-pointer transition",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "text-xl font-semibold text-gray-800",
-                                        children: "Privacy Settings"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/app/profile/page.tsx",
                                         lineNumber: 37,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-sm text-gray-600",
-                                        children: "Control your privacy and security options."
+                                        children: "Adjust your app and notification preferences."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/profile/page.tsx",
                                         lineNumber: 38,
@@ -138,26 +114,27 @@ function ProfilePage() {
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/profile/page.tsx",
-                                lineNumber: 36,
+                                lineNumber: 33,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "p-6 bg-yellow-100 border rounded-lg hover:shadow-lg cursor-pointer transition",
+                                className: "p-6 bg-red-100 border rounded-lg hover:shadow-lg cursor-pointer transition",
+                                onClick: ()=>router.push('/privacy-settings'),
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                         className: "text-xl font-semibold text-gray-800",
-                                        children: "Language"
+                                        children: "Privacy Settings"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/profile/page.tsx",
-                                        lineNumber: 43,
+                                        lineNumber: 46,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-sm text-gray-600",
-                                        children: "Select your preferred language."
+                                        children: "Control your privacy and security options."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/profile/page.tsx",
-                                        lineNumber: 44,
+                                        lineNumber: 47,
                                         columnNumber: 13
                                     }, this)
                                 ]
@@ -167,6 +144,32 @@ function ProfilePage() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "p-6 bg-yellow-100 border rounded-lg hover:shadow-lg cursor-pointer transition",
+                                onClick: ()=>router.push('/language-settings'),
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "text-xl font-semibold text-gray-800",
+                                        children: "Language"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/profile/page.tsx",
+                                        lineNumber: 55,
+                                        columnNumber: 3
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-sm text-gray-600",
+                                        children: "Select your preferred language."
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/profile/page.tsx",
+                                        lineNumber: 56,
+                                        columnNumber: 3
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/profile/page.tsx",
+                                lineNumber: 51,
+                                columnNumber: 1
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "p-6 bg-orange-100 border rounded-lg hover:shadow-lg cursor-pointer transition",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -174,7 +177,7 @@ function ProfilePage() {
                                         children: "Subscription"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/profile/page.tsx",
-                                        lineNumber: 49,
+                                        lineNumber: 62,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -182,13 +185,13 @@ function ProfilePage() {
                                         children: "Manage your subscription and billing details."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/profile/page.tsx",
-                                        lineNumber: 50,
+                                        lineNumber: 63,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/profile/page.tsx",
-                                lineNumber: 48,
+                                lineNumber: 61,
                                 columnNumber: 11
                             }, this)
                         ]

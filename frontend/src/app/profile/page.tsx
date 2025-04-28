@@ -21,28 +21,41 @@ export default function ProfilePage() {
 
         <div className="flex flex-col gap-6">
           {/* Settings Section */}
-          <div className="p-6 bg-yellow-100 border rounded-lg hover:shadow-lg cursor-pointer transition">
+          <div
+            className="p-6 bg-yellow-100 border rounded-lg hover:shadow-lg cursor-pointer transition"
+            onClick={() => router.push('/settings')}
+          >
             <h2 className="text-xl font-semibold text-gray-800">Settings</h2>
             <p className="text-sm text-gray-600">Manage your account settings and set preferences.</p>
           </div>
 
           {/* Preferences Section */}
-          <div className="p-6 bg-orange-100 border rounded-lg hover:shadow-lg cursor-pointer transition" onClick={() => router.push('/preference')}>
+          <div
+            className="p-6 bg-orange-100 border rounded-lg hover:shadow-lg cursor-pointer transition"
+            onClick={() => router.push('/preference')}
+          >
             <h2 className="text-xl font-semibold text-gray-800">Preferences</h2>
             <p className="text-sm text-gray-600">Adjust your app and notification preferences.</p>
           </div>
 
-          {/* Privacy Settings Section */}
-          <div className="p-6 bg-red-100 border rounded-lg hover:shadow-lg cursor-pointer transition">
+          {/* Privacy Settings Section -- FIXED to navigate */}
+          <div
+            className="p-6 bg-red-100 border rounded-lg hover:shadow-lg cursor-pointer transition"
+            onClick={() => router.push('/privacy-settings')}
+          >
             <h2 className="text-xl font-semibold text-gray-800">Privacy Settings</h2>
             <p className="text-sm text-gray-600">Control your privacy and security options.</p>
           </div>
 
           {/* Language Section */}
-          <div className="p-6 bg-yellow-100 border rounded-lg hover:shadow-lg cursor-pointer transition">
-            <h2 className="text-xl font-semibold text-gray-800">Language</h2>
-            <p className="text-sm text-gray-600">Select your preferred language.</p>
-          </div>
+<div
+  className="p-6 bg-yellow-100 border rounded-lg hover:shadow-lg cursor-pointer transition"
+  onClick={() => router.push('/language-settings')}
+>
+  <h2 className="text-xl font-semibold text-gray-800">Language</h2>
+  <p className="text-sm text-gray-600">Select your preferred language.</p>
+</div>
+
 
           {/* Subscription Section */}
           <div className="p-6 bg-orange-100 border rounded-lg hover:shadow-lg cursor-pointer transition">

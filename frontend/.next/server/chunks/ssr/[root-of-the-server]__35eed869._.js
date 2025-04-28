@@ -52,21 +52,21 @@ function AboutPage() {
         router.push(path);
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "jsx-6eda9863f2363db3" + " " + "min-h-screen flex flex-col relative overflow-hidden",
+        className: "jsx-dc6cd3e5de0399c2" + " " + "min-h-screen flex flex-col relative overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-6eda9863f2363db3" + " " + "absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,#FFAD60,#FF6B6B,#FF4E00)] animate-pulseBackground bg-cover bg-no-repeat z-0"
+                className: "jsx-dc6cd3e5de0399c2" + " " + "absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,#FFAD60,#FF6B6B,#FF4E00)] animate-pulseBackground bg-cover bg-no-repeat z-0"
             }, void 0, false, {
                 fileName: "[project]/src/app/about/page.tsx",
                 lineNumber: 22,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-                className: "jsx-6eda9863f2363db3" + " " + "flex justify-between items-center px-8 py-4 bg-white/20 backdrop-blur-md text-black z-10 relative",
+                className: "jsx-dc6cd3e5de0399c2" + " " + "flex justify-between items-center px-8 py-4 bg-white/20 backdrop-blur-md text-black z-10 relative",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         onClick: ()=>navigateTo("/"),
-                        className: "jsx-6eda9863f2363db3" + " " + "text-2xl font-bold cursor-pointer",
+                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-2xl font-bold cursor-pointer",
                         children: "CHEF"
                     }, void 0, false, {
                         fileName: "[project]/src/app/about/page.tsx",
@@ -74,11 +74,11 @@ function AboutPage() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-6eda9863f2363db3" + " " + "flex gap-6 text-lg font-semibold",
+                        className: "jsx-dc6cd3e5de0399c2" + " " + "flex gap-6 text-lg font-semibold",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>navigateTo("/"),
-                                className: "jsx-6eda9863f2363db3" + " " + "hover:underline",
+                                className: "jsx-dc6cd3e5de0399c2" + " " + "hover:underline",
                                 children: "Home"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/about/page.tsx",
@@ -87,7 +87,7 @@ function AboutPage() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>navigateTo("/about"),
-                                className: "jsx-6eda9863f2363db3" + " " + "hover:underline",
+                                className: "jsx-dc6cd3e5de0399c2" + " " + "hover:underline",
                                 children: "About Us"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/about/page.tsx",
@@ -96,7 +96,7 @@ function AboutPage() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 onClick: ()=>navigateTo("/contact"),
-                                className: "jsx-6eda9863f2363db3" + " " + "hover:underline",
+                                className: "jsx-dc6cd3e5de0399c2" + " " + "hover:underline",
                                 children: "Contact"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/about/page.tsx",
@@ -116,13 +116,13 @@ function AboutPage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-6eda9863f2363db3" + " " + "flex-grow flex flex-col items-center justify-center p-8 relative z-10",
+                className: "jsx-dc6cd3e5de0399c2" + " " + "flex-grow flex flex-col items-center justify-center p-8 relative z-10",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-6eda9863f2363db3" + " " + "max-w-4xl text-center space-y-6 mb-16 backdrop-blur-xl bg-white/10 p-10 rounded-2xl border-2 border-orange-200 shadow-2xl",
+                        className: "jsx-dc6cd3e5de0399c2" + " " + "max-w-4xl text-center space-y-6 mb-16 backdrop-blur-xl bg-white/10 p-10 rounded-2xl border-2 border-orange-200 shadow-2xl",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "jsx-6eda9863f2363db3" + " " + "text-5xl font-bold text-white",
+                                className: "jsx-dc6cd3e5de0399c2" + " " + "text-5xl font-bold text-white",
                                 children: "About Our Application"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/about/page.tsx",
@@ -130,7 +130,7 @@ function AboutPage() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "jsx-6eda9863f2363db3" + " " + "text-white text-lg",
+                                className: "jsx-dc6cd3e5de0399c2" + " " + "text-white text-lg",
                                 children: "Chef2 is a vibrant platform for culinary enthusiasts to discover, share, and master recipes from around the globe. We make cooking fun, easy, and accessible for everyone through innovative technology and beautiful design."
                             }, void 0, false, {
                                 fileName: "[project]/src/app/about/page.tsx",
@@ -144,13 +144,13 @@ function AboutPage() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-6eda9863f2363db3" + " " + "w-full text-center space-y-12",
+                        className: "jsx-dc6cd3e5de0399c2" + " " + "w-full text-center space-y-12",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "jsx-6eda9863f2363db3",
+                                className: "jsx-dc6cd3e5de0399c2",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "jsx-6eda9863f2363db3" + " " + "text-4xl font-bold text-white",
+                                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-4xl font-bold text-white",
                                         children: "Meet Our Team"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/about/page.tsx",
@@ -158,7 +158,7 @@ function AboutPage() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "jsx-6eda9863f2363db3" + " " + "text-white mt-2",
+                                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-white mt-2",
                                         children: "Our skilled and dedicated team brings a wealth of experience and expertise to the table."
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/about/page.tsx",
@@ -172,25 +172,25 @@ function AboutPage() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "jsx-6eda9863f2363db3" + " " + "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 max-w-7xl mx-auto",
+                                className: "jsx-dc6cd3e5de0399c2" + " " + "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 max-w-7xl mx-auto",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "jsx-6eda9863f2363db3" + " " + "bg-white shadow-lg rounded-lg p-6 flex flex-col items-center space-y-4 hover:scale-105 transition-transform",
+                                        className: "jsx-dc6cd3e5de0399c2" + " " + "bg-white shadow-lg rounded-lg p-6 flex flex-col items-center space-y-4 hover:scale-105 transition-transform",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                 src: "https://media.licdn.com/dms/image/v2/C4E03AQFB0lmV_2G6Fg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1636931359558?e=1751500800&v=beta&t=NDQgdI4BG4A1P3JgseFVXm-m_nbRXvs8EQe9rTc0dPs",
                                                 alt: "John Doe",
-                                                className: "jsx-6eda9863f2363db3" + " " + "w-32 h-32 rounded-full object-cover"
+                                                className: "jsx-dc6cd3e5de0399c2" + " " + "w-32 h-32 rounded-full object-cover"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/about/page.tsx",
                                                 lineNumber: 60,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-6eda9863f2363db3" + " " + "text-center space-y-1",
+                                                className: "jsx-dc6cd3e5de0399c2" + " " + "text-center space-y-1",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "jsx-6eda9863f2363db3" + " " + "text-xl font-bold",
+                                                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-xl font-bold",
                                                         children: "John Doe"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/about/page.tsx",
@@ -198,7 +198,7 @@ function AboutPage() {
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "jsx-6eda9863f2363db3" + " " + "text-gray-500 text-sm",
+                                                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-gray-500 text-sm",
                                                         children: "CEO"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/about/page.tsx",
@@ -206,7 +206,7 @@ function AboutPage() {
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "jsx-6eda9863f2363db3" + " " + "text-gray-600 text-sm mt-2",
+                                                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-gray-600 text-sm mt-2",
                                                         children: "Visionary leader with 10+ years of experience."
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/about/page.tsx",
@@ -220,7 +220,7 @@ function AboutPage() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-6eda9863f2363db3" + " " + "flex gap-4 mt-4 text-gray-400",
+                                                className: "jsx-dc6cd3e5de0399c2" + " " + "flex gap-4 mt-4 text-gray-400",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaFacebookF"], {
                                                         className: "hover:text-blue-600 cursor-pointer"
@@ -256,22 +256,22 @@ function AboutPage() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "jsx-6eda9863f2363db3" + " " + "bg-white shadow-lg rounded-lg p-6 flex flex-col items-center space-y-4 hover:scale-105 transition-transform",
+                                        className: "jsx-dc6cd3e5de0399c2" + " " + "bg-white shadow-lg rounded-lg p-6 flex flex-col items-center space-y-4 hover:scale-105 transition-transform",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                 src: "https://media.licdn.com/dms/image/v2/D5635AQE_Uyx28deTFg/profile-framedphoto-shrink_800_800/B56ZYmZJVeHoAg-/0/1744400848569?e=1746414000&v=beta&t=JbB_raKYXl0f9OesIlo6YwrFQ3xMOOybSiZuCQ_Eiho",
                                                 alt: "Jane Smith",
-                                                className: "jsx-6eda9863f2363db3" + " " + "w-32 h-32 rounded-full object-cover"
+                                                className: "jsx-dc6cd3e5de0399c2" + " " + "w-32 h-32 rounded-full object-cover"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/about/page.tsx",
                                                 lineNumber: 79,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-6eda9863f2363db3" + " " + "text-center space-y-1",
+                                                className: "jsx-dc6cd3e5de0399c2" + " " + "text-center space-y-1",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "jsx-6eda9863f2363db3" + " " + "text-xl font-bold",
+                                                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-xl font-bold",
                                                         children: "Jane Smith"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/about/page.tsx",
@@ -279,7 +279,7 @@ function AboutPage() {
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "jsx-6eda9863f2363db3" + " " + "text-gray-500 text-sm",
+                                                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-gray-500 text-sm",
                                                         children: "CTO"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/about/page.tsx",
@@ -287,7 +287,7 @@ function AboutPage() {
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "jsx-6eda9863f2363db3" + " " + "text-gray-600 text-sm mt-2",
+                                                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-gray-600 text-sm mt-2",
                                                         children: "Passionate about innovation and technology."
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/about/page.tsx",
@@ -301,7 +301,7 @@ function AboutPage() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-6eda9863f2363db3" + " " + "flex gap-4 mt-4 text-gray-400",
+                                                className: "jsx-dc6cd3e5de0399c2" + " " + "flex gap-4 mt-4 text-gray-400",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaFacebookF"], {
                                                         className: "hover:text-blue-600 cursor-pointer"
@@ -337,22 +337,22 @@ function AboutPage() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "jsx-6eda9863f2363db3" + " " + "bg-white shadow-lg rounded-lg p-6 flex flex-col items-center space-y-4 hover:scale-105 transition-transform",
+                                        className: "jsx-dc6cd3e5de0399c2" + " " + "bg-white shadow-lg rounded-lg p-6 flex flex-col items-center space-y-4 hover:scale-105 transition-transform",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                 src: "https://media.licdn.com/dms/image/v2/D5603AQGk1fc0DYCjcw/profile-displayphoto-shrink_800_800/B56ZW1pSVjGsAc-/0/1742509257254?e=1751500800&v=beta&t=nqIB1TIOOYPCEFe9KaOUESvNYmjN2bdOCPayGhzuF2w",
                                                 alt: "Alex Brown",
-                                                className: "jsx-6eda9863f2363db3" + " " + "w-32 h-32 rounded-full object-cover"
+                                                className: "jsx-dc6cd3e5de0399c2" + " " + "w-32 h-32 rounded-full object-cover"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/about/page.tsx",
                                                 lineNumber: 98,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-6eda9863f2363db3" + " " + "text-center space-y-1",
+                                                className: "jsx-dc6cd3e5de0399c2" + " " + "text-center space-y-1",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "jsx-6eda9863f2363db3" + " " + "text-xl font-bold",
+                                                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-xl font-bold",
                                                         children: "Alex Brown"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/about/page.tsx",
@@ -360,7 +360,7 @@ function AboutPage() {
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "jsx-6eda9863f2363db3" + " " + "text-gray-500 text-sm",
+                                                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-gray-500 text-sm",
                                                         children: "CFO"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/about/page.tsx",
@@ -368,7 +368,7 @@ function AboutPage() {
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "jsx-6eda9863f2363db3" + " " + "text-gray-600 text-sm mt-2",
+                                                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-gray-600 text-sm mt-2",
                                                         children: "Financial expert focused on growth."
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/about/page.tsx",
@@ -382,7 +382,7 @@ function AboutPage() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-6eda9863f2363db3" + " " + "flex gap-4 mt-4 text-gray-400",
+                                                className: "jsx-dc6cd3e5de0399c2" + " " + "flex gap-4 mt-4 text-gray-400",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaFacebookF"], {
                                                         className: "hover:text-blue-600 cursor-pointer"
@@ -418,22 +418,22 @@ function AboutPage() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "jsx-6eda9863f2363db3" + " " + "bg-white shadow-lg rounded-lg p-6 flex flex-col items-center space-y-4 hover:scale-105 transition-transform",
+                                        className: "jsx-dc6cd3e5de0399c2" + " " + "bg-white shadow-lg rounded-lg p-6 flex flex-col items-center space-y-4 hover:scale-105 transition-transform",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                 src: "https://media.licdn.com/dms/image/v2/D5603AQF4aUNhB_Fj2Q/profile-displayphoto-shrink_800_800/B56ZUSxMNpGsAc-/0/1739776641856?e=1751500800&v=beta&t=ULFxPEOY0AnMqujg5mA3NW_FxEOjlxTs1iOJQ1iJReg",
                                                 alt: "Michael Green",
-                                                className: "jsx-6eda9863f2363db3" + " " + "w-32 h-32 rounded-full object-cover"
+                                                className: "jsx-dc6cd3e5de0399c2" + " " + "w-32 h-32 rounded-full object-cover"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/about/page.tsx",
                                                 lineNumber: 117,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-6eda9863f2363db3" + " " + "text-center space-y-1",
+                                                className: "jsx-dc6cd3e5de0399c2" + " " + "text-center space-y-1",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "jsx-6eda9863f2363db3" + " " + "text-xl font-bold",
+                                                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-xl font-bold",
                                                         children: "Michael Green"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/about/page.tsx",
@@ -441,7 +441,7 @@ function AboutPage() {
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "jsx-6eda9863f2363db3" + " " + "text-gray-500 text-sm",
+                                                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-gray-500 text-sm",
                                                         children: "Product Manager"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/about/page.tsx",
@@ -449,7 +449,7 @@ function AboutPage() {
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "jsx-6eda9863f2363db3" + " " + "text-gray-600 text-sm mt-2",
+                                                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-gray-600 text-sm mt-2",
                                                         children: "Keeps our products user-friendly and innovative."
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/about/page.tsx",
@@ -463,7 +463,7 @@ function AboutPage() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-6eda9863f2363db3" + " " + "flex gap-4 mt-4 text-gray-400",
+                                                className: "jsx-dc6cd3e5de0399c2" + " " + "flex gap-4 mt-4 text-gray-400",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaFacebookF"], {
                                                         className: "hover:text-blue-600 cursor-pointer"
@@ -499,22 +499,22 @@ function AboutPage() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "jsx-6eda9863f2363db3" + " " + "bg-white shadow-lg rounded-lg p-6 flex flex-col items-center space-y-4 hover:scale-105 transition-transform",
+                                        className: "jsx-dc6cd3e5de0399c2" + " " + "bg-white shadow-lg rounded-lg p-6 flex flex-col items-center space-y-4 hover:scale-105 transition-transform",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                                                 src: "https://media.licdn.com/dms/image/v2/D5603AQHrgzJV_VJEjw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1688141820965?e=1751500800&v=beta&t=72uqx-yKxWb6b3KfK92DBV6vaOrPj70h4O_yUF9JmVo",
                                                 alt: "Sophia Martinez",
-                                                className: "jsx-6eda9863f2363db3" + " " + "w-32 h-32 rounded-full object-cover"
+                                                className: "jsx-dc6cd3e5de0399c2" + " " + "w-32 h-32 rounded-full object-cover"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/about/page.tsx",
                                                 lineNumber: 136,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-6eda9863f2363db3" + " " + "text-center space-y-1",
+                                                className: "jsx-dc6cd3e5de0399c2" + " " + "text-center space-y-1",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                        className: "jsx-6eda9863f2363db3" + " " + "text-xl font-bold",
+                                                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-xl font-bold",
                                                         children: "Sophia Martinez"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/about/page.tsx",
@@ -522,7 +522,7 @@ function AboutPage() {
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "jsx-6eda9863f2363db3" + " " + "text-gray-500 text-sm",
+                                                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-gray-500 text-sm",
                                                         children: "Marketing Lead"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/about/page.tsx",
@@ -530,7 +530,7 @@ function AboutPage() {
                                                         columnNumber: 17
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                        className: "jsx-6eda9863f2363db3" + " " + "text-gray-600 text-sm mt-2",
+                                                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-gray-600 text-sm mt-2",
                                                         children: "Spreads the word about Chef2 with creative strategies."
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/about/page.tsx",
@@ -544,7 +544,7 @@ function AboutPage() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "jsx-6eda9863f2363db3" + " " + "flex gap-4 mt-4 text-gray-400",
+                                                className: "jsx-dc6cd3e5de0399c2" + " " + "flex gap-4 mt-4 text-gray-400",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaFacebookF"], {
                                                         className: "hover:text-blue-600 cursor-pointer"
@@ -564,7 +564,7 @@ function AboutPage() {
                                                         href: "https://www.linkedin.com/in/wesleykieu/",
                                                         target: "_blank",
                                                         rel: "noopener noreferrer",
-                                                        className: "jsx-6eda9863f2363db3",
+                                                        className: "jsx-dc6cd3e5de0399c2",
                                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$icons$2f$fa$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["FaLinkedinIn"], {
                                                             className: "hover:text-blue-700 cursor-pointer"
                                                         }, void 0, false, {
@@ -608,8 +608,8 @@ function AboutPage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                id: "6eda9863f2363db3",
-                children: "@keyframes pulseBackground{0%{background-position:0%}50%{background-position:100%}to{background-position:0%}}.animate-pulseBackground.jsx-6eda9863f2363db3{background-size:400% 400%;animation:6s infinite pulseBackground}"
+                id: "dc6cd3e5de0399c2",
+                children: "@keyframes pulseBackground{0%{background-position:0%}50%{background-position:100%}to{background-position:0%}}.animate-pulseBackground.jsx-dc6cd3e5de0399c2{background-size:400% 400%;animation:6s infinite pulseBackground}"
             }, void 0, false, void 0, this)
         ]
     }, void 0, true, {
