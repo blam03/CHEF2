@@ -1,10 +1,9 @@
 {
+  "/about/page": "app/about/page.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/dashboard/page": "app/dashboard/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/grocerylist/page": "app/grocerylist/page.js",
   "/login/page": "app/login/page.js",
   "/meals/page": "app/meals/page.js",
-  "/page": "app/page.js",
-  "/profile/page": "app/profile/page.js"
+  "/page": "app/page.js"
 }

@@ -27,20 +27,20 @@ function LoginPage() {
         });
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "jsx-dc6cd3e5de0399c2" + " " + "min-h-screen flex items-center justify-center p-4 relative overflow-hidden",
+        className: "jsx-6eda9863f2363db3" + " " + "min-h-screen flex items-center justify-center p-4 relative overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-dc6cd3e5de0399c2" + " " + "absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,#FFAD60,#FF6B6B,#FF4E00)] animate-pulseBackground bg-cover bg-no-repeat"
+                className: "jsx-6eda9863f2363db3" + " " + "absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,#FFAD60,#FF6B6B,#FF4E00)] animate-pulseBackground bg-cover bg-no-repeat"
             }, void 0, false, {
                 fileName: "[project]/src/app/login/page.tsx",
                 lineNumber: 19,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "jsx-dc6cd3e5de0399c2" + " " + "relative z-10 backdrop-blur-xl bg-white/10 border-2 border-orange-200 shadow-2xl rounded-2xl p-16 max-w-lg w-full text-center",
+                className: "jsx-6eda9863f2363db3" + " " + "relative z-10 backdrop-blur-xl bg-white/10 border-2 border-orange-200 shadow-2xl rounded-2xl p-16 max-w-lg w-full text-center",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                        className: "jsx-dc6cd3e5de0399c2" + " " + "text-6xl font-extrabold text-white mb-10 tracking-widest drop-shadow-[0_0_30px_white,0_0_45px_#FFAD60,0_0_60px_#FF6B6B]",
+                        className: "jsx-6eda9863f2363db3" + " " + "text-6xl font-extrabold text-white mb-10 tracking-widest drop-shadow-[0_0_30px_white,0_0_45px_#FFAD60,0_0_60px_#FF6B6B]",
                         children: "CHEF"
                     }, void 0, false, {
                         fileName: "[project]/src/app/login/page.tsx",
@@ -49,7 +49,7 @@ function LoginPage() {
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         onClick: handleLogin,
-                        className: "jsx-dc6cd3e5de0399c2" + " " + "w-full py-3 bg-[#FF6B6B] hover:bg-[#FF4E00] text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all transform hover:scale-105 text-lg",
+                        className: "jsx-6eda9863f2363db3" + " " + "w-full py-3 bg-[#FF6B6B] hover:bg-[#FF4E00] text-white font-semibold rounded-xl shadow-md hover:shadow-lg transition-all transform hover:scale-105 text-lg",
                         children: "Sign in with Google"
                     }, void 0, false, {
                         fileName: "[project]/src/app/login/page.tsx",
@@ -57,11 +57,11 @@ function LoginPage() {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "jsx-dc6cd3e5de0399c2" + " " + "mt-6 text-white font-bold",
+                        className: "jsx-6eda9863f2363db3" + " " + "mt-6 text-white font-bold",
                         children: [
                             "Don't have an account? ",
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                className: "jsx-dc6cd3e5de0399c2" + " " + "underline cursor-pointer",
+                                className: "jsx-6eda9863f2363db3" + " " + "underline cursor-pointer",
                                 children: "Sign up"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/login/page.tsx",
@@ -81,8 +81,8 @@ function LoginPage() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                id: "dc6cd3e5de0399c2",
-                children: "@keyframes pulseBackground{0%{background-position:0%}50%{background-position:100%}to{background-position:0%}}.animate-pulseBackground.jsx-dc6cd3e5de0399c2{background-size:400% 400%;animation:6s infinite pulseBackground}"
+                id: "6eda9863f2363db3",
+                children: "@keyframes pulseBackground{0%{background-position:0%}50%{background-position:100%}to{background-position:0%}}.animate-pulseBackground.jsx-6eda9863f2363db3{background-size:400% 400%;animation:6s infinite pulseBackground}"
             }, void 0, false, void 0, this)
         ]
     }, void 0, true, {

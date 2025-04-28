@@ -553,26 +553,26 @@ function DashboardPage() {
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "jsx-58efbb5005d33bbf" + " " + "relative w-full overflow-hidden",
+                                        className: "jsx-60982b5ab79f9f1a" + " " + "relative w-full overflow-hidden",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$styled$2d$jsx$2f$style$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                id: "58efbb5005d33bbf",
+                                                id: "60982b5ab79f9f1a",
                                                 children: "@keyframes scroll{0%{transform:translate(0)}to{transform:translate(-50%)}}"
                                             }, void 0, false, void 0, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 style: {
                                                     animation: 'scroll 20s linear infinite'
                                                 },
-                                                className: "jsx-58efbb5005d33bbf" + " " + "flex animate-scroll whitespace-nowrap",
+                                                className: "jsx-60982b5ab79f9f1a" + " " + "flex animate-scroll whitespace-nowrap",
                                                 children: [
                                                     ...meals,
                                                     ...meals
                                                 ].map((meal, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                         onClick: ()=>openModal(meal),
-                                                        className: "jsx-58efbb5005d33bbf" + " " + "cursor-pointer flex-shrink-0 w-[220px] h-[220px] mx-2 bg-white/40 backdrop-blur-md rounded-xl shadow-md flex flex-col justify-center items-center border border-white/30",
+                                                        className: "jsx-60982b5ab79f9f1a" + " " + "cursor-pointer flex-shrink-0 w-[220px] h-[220px] mx-2 bg-white/40 backdrop-blur-md rounded-xl shadow-md flex flex-col justify-center items-center border border-white/30",
                                                         children: [
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                                className: "jsx-58efbb5005d33bbf" + " " + "text-base font-semibold text-gray-800",
+                                                                className: "jsx-60982b5ab79f9f1a" + " " + "text-base font-semibold text-gray-800",
                                                                 children: meal.title
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/dashboard/page.tsx",
@@ -580,7 +580,7 @@ function DashboardPage() {
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: "jsx-58efbb5005d33bbf" + " " + "mt-2 text-xs text-gray-600 text-center px-4",
+                                                                className: "jsx-60982b5ab79f9f1a" + " " + "mt-2 text-xs text-gray-600 text-center px-4",
                                                                 children: meal.description
                                                             }, void 0, false, {
                                                                 fileName: "[project]/src/app/dashboard/page.tsx",

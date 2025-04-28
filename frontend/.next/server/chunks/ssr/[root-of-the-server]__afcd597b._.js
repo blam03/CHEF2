@@ -44,59 +44,99 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 ;
 const steps = [
     {
-        question: 'Goals?',
+        question: 'What are your Goals?',
         options: [
-            'Loose Weight',
+            'Lose Weight',
             'Gain Weight',
             'Eat Healthy',
             'Build Muscle',
-            'Save money',
-            'Save time'
+            'Save Money',
+            'Save Time'
         ],
-        key: 'diet'
+        key: 'goals',
+        type: 'checkbox'
     },
     {
-        question: 'Do you have any allergies?',
+        question: 'Do you have any Allergies?',
         options: [
             'Dairy',
             'Nuts',
             'Gluten',
             'No Allergies'
         ],
-        key: 'allergies'
+        key: 'allergies',
+        type: 'checkbox'
     },
     {
-        question: 'Dietery Restrictions?',
+        question: 'Any Dietary Restrictions?',
         options: [
             'Vegan',
             'Vegetarian',
             'Halal',
             'None'
         ],
-        key: 'cuisine'
+        key: 'dietaryRestrictions',
+        type: 'checkbox'
+    },
+    {
+        question: 'What times do you usually eat?',
+        key: 'mealTimes',
+        type: 'time'
+    },
+    {
+        question: 'What are your Favorite Cuisines?',
+        options: [
+            'Italian',
+            'Indian',
+            'Mexican',
+            'Japanese',
+            'American',
+            'Thai',
+            'Chinese'
+        ],
+        key: 'favoriteCuisines',
+        type: 'checkbox'
     }
 ];
 function PreferencesPage() {
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     const [currentStep, setCurrentStep] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
     const [answers, setAnswers] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
-        diet: '',
-        allergies: '',
-        cuisine: ''
+        goals: [],
+        allergies: [],
+        dietaryRestrictions: [],
+        mealTimes: {
+            breakfast: '',
+            lunch: '',
+            dinner: ''
+        },
+        favoriteCuisines: []
     });
-    const handleOptionSelect = (option)=>{
+    const handleCheckboxToggle = (option)=>{
         const key = steps[currentStep].key;
-        setAnswers((prev)=>({
-                ...prev,
-                [key]: option
-            }));
+        setAnswers((prev)=>{
+            const currentOptions = prev[key];
+            if (currentOptions.includes(option)) {
+                return {
+                    ...prev,
+                    [key]: currentOptions.filter((item)=>item !== option)
+                };
+            } else {
+                return {
+                    ...prev,
+                    [key]: [
+                        ...currentOptions,
+                        option
+                    ]
+                };
+            }
+        });
     };
     const handleNext = ()=>{
         if (currentStep < steps.length - 1) {
             setCurrentStep((prev)=>prev + 1);
         } else {
             console.log('Final answers:', answers);
-            // You could send answers to backend here
             router.push('/dashboard');
         }
     };
@@ -135,24 +175,123 @@ function PreferencesPage() {
                             children: steps[currentStep].question
                         }, void 0, false, {
                             fileName: "[project]/src/app/preference/page.tsx",
-                            lineNumber: 68,
+                            lineNumber: 94,
                             columnNumber: 13
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        steps[currentStep].type === 'checkbox' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex flex-col gap-4",
-                            children: steps[currentStep].options.map((option)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    onClick: ()=>handleOptionSelect(option),
-                                    className: `px-4 py-2 rounded-lg border text-gray-700 hover:bg-gray-100 ${answers[steps[currentStep].key] === option ? 'bg-blue-100 border-blue-400' : 'border-gray-300'}`,
-                                    children: option
-                                }, option, false, {
+                            children: steps[currentStep].options.map((option)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                    className: "flex items-center gap-3 cursor-pointer",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                            type: "checkbox",
+                                            checked: answers[steps[currentStep].key].includes(option),
+                                            onChange: ()=>handleCheckboxToggle(option),
+                                            className: "h-5 w-5 text-blue-600 rounded focus:ring-0"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/preference/page.tsx",
+                                            lineNumber: 102,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-gray-700 text-sm",
+                                            children: option
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/preference/page.tsx",
+                                            lineNumber: 108,
+                                            columnNumber: 21
+                                        }, this)
+                                    ]
+                                }, option, true, {
                                     fileName: "[project]/src/app/preference/page.tsx",
-                                    lineNumber: 73,
-                                    columnNumber: 17
+                                    lineNumber: 101,
+                                    columnNumber: 19
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/src/app/preference/page.tsx",
-                            lineNumber: 71,
-                            columnNumber: 13
+                            lineNumber: 99,
+                            columnNumber: 15
+                        }, this),
+                        steps[currentStep].type === 'time' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex flex-col gap-4",
+                            children: [
+                                'Breakfast',
+                                'Lunch',
+                                'Dinner'
+                            ].map((meal)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
+                                    className: "flex flex-col gap-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-sm font-medium text-gray-700",
+                                            children: [
+                                                meal,
+                                                " Time:"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/preference/page.tsx",
+                                            lineNumber: 118,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                            value: answers.mealTimes[meal.toLowerCase()],
+                                            onChange: (e)=>setAnswers((prev)=>({
+                                                        ...prev,
+                                                        mealTimes: {
+                                                            ...prev.mealTimes,
+                                                            [meal.toLowerCase()]: e.target.value
+                                                        }
+                                                    })),
+                                            className: "p-2 border rounded text-gray-700",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                    value: "",
+                                                    children: "Select a time"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/app/preference/page.tsx",
+                                                    lineNumber: 130,
+                                                    columnNumber: 23
+                                                }, this),
+                                                [
+                                                    '6 AM',
+                                                    '7 AM',
+                                                    '8 AM',
+                                                    '9 AM',
+                                                    '10 AM',
+                                                    '11 AM',
+                                                    '12 PM',
+                                                    '1 PM',
+                                                    '2 PM',
+                                                    '3 PM',
+                                                    '4 PM',
+                                                    '5 PM',
+                                                    '6 PM',
+                                                    '7 PM',
+                                                    '8 PM',
+                                                    '9 PM'
+                                                ].map((time)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                        value: time,
+                                                        children: time
+                                                    }, time, false, {
+                                                        fileName: "[project]/src/app/preference/page.tsx",
+                                                        lineNumber: 132,
+                                                        columnNumber: 25
+                                                    }, this))
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/src/app/preference/page.tsx",
+                                            lineNumber: 119,
+                                            columnNumber: 21
+                                        }, this)
+                                    ]
+                                }, meal, true, {
+                                    fileName: "[project]/src/app/preference/page.tsx",
+                                    lineNumber: 117,
+                                    columnNumber: 19
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/preference/page.tsx",
+                            lineNumber: 115,
+                            columnNumber: 15
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex justify-between mt-6",
@@ -163,44 +302,44 @@ function PreferencesPage() {
                                     children: "Back"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/preference/page.tsx",
-                                    lineNumber: 83,
+                                    lineNumber: 141,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     onClick: handleNext,
                                     className: "px-6 py-2 bg-blue-500 hover:bg-blue-600 text-white rounded-lg",
-                                    disabled: !answers[steps[currentStep].key],
+                                    disabled: steps[currentStep].type === 'checkbox' && answers[steps[currentStep].key].length === 0,
                                     children: currentStep === steps.length - 1 ? 'Finish' : 'Next'
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/preference/page.tsx",
-                                    lineNumber: 89,
+                                    lineNumber: 147,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/preference/page.tsx",
-                            lineNumber: 82,
+                            lineNumber: 140,
                             columnNumber: 13
                         }, this)
                     ]
                 }, currentStep, true, {
                     fileName: "[project]/src/app/preference/page.tsx",
-                    lineNumber: 61,
+                    lineNumber: 87,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/preference/page.tsx",
-                lineNumber: 60,
+                lineNumber: 86,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/preference/page.tsx",
-            lineNumber: 59,
+            lineNumber: 85,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/preference/page.tsx",
-        lineNumber: 58,
+        lineNumber: 84,
         columnNumber: 5
     }, this);
 }
